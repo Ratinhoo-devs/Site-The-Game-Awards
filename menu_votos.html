@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | The Game Awards</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    color: white;
+    background-image: url("https://assets.newsweek.com/wp-content/uploads/2025/08/2543267-game-awards-key-art.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.principal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.conteudo {
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+
+.categoria {
+    padding: 18px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(20, 20, 20, 0.80);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 260px;
+}
+
+.categoria:hover {
+    transform: scale(1.1);
+    background: rgba(40, 40, 40, 0.90);
+}
+
+.categoria:active {
+    transform: scale(1.05);
+    background: rgba(55, 55, 55, 0.95);
+}
+
+
+footer {
+    margin-top: 46px;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaaaaa;
+    position: relative;
+}
+
+</style>
+<body>
+<section class="principal">
+    <div class="conteudo">
+    <header>
+        <h1>Categorias de Votação</h1>
+        <br>
+        <p>Selecione uma categoria abaixo</p>
+    </header>
+
+    <main class="categorias">
+        <div class="coluna">
+            <a href="jogo-ano.html"><button class="categoria">Jogo do Ano</button></a>
+            <a href="direcao.html"><button class="categoria">Melhor Direção</button></a>
+            <a href="narrativa.html"><button class="categoria">Melhor Narrativa</button></a>
+        </div>
+
+        <div class="coluna">
+           <a href="design.html"><button class="categoria">Melhor Design de Jogo</button></a>
+            <a href="trilha.html"><button class="categoria">Melhor Trilha Sonora</button></a>
+           <a href="performance.html"><button class="categoria">Melhor Performance</button></a>
+        </div>
+    </main>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2025 The Game Awards. Lucas Araujo Santos e Lucas Guimarães Biral. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

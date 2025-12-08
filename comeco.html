@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Awards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* * <- seleciona todos os itens */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Primeira página */
+.pagina-inicial {
+    height: 100vh;
+
+    background-image: url('https://xboxwire.thesourcemediaassets.com/sites/8/2023/11/TGA23-1dc89d73646a4b956bae.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+/*Overlay <- essa camadinha mais preta pra melhorar a leitura*/
+
+.pagina-inicial::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+/*texto em cima do overlay*/
+.conteudo {
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: transform 0.25s ease, background-color 0.25s ease;
+
+    transform: scale(1);
+}
+
+.botao:hover {
+    transform: scale(1.12);
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.botao:active {
+    transform: scale(0.96);
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+</style>
+<body>
+
+    <section class="pagina-inicial">
+        <div class="conteudo">
+            <h1>THE GAME AWARDS</h1>
+            <a href="menu_votos.html" class="botao">Vote aqui</a>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Ano</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            background-image: url("https://gamelust.com/wp-content/uploads/2018/12/the-game-awards-2017-logo-promotional-video-trailer.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.65);
+            padding: 40px;
+            border-radius: 14px;
+            width: 400px;
+            color: white;
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            padding: 10px 12px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        label:hover {
+            background: rgba(255,255,255,0.18);
+        }
+
+        input[type="radio"] {
+            transform: scale(1.1);
+        }
+
+        .enviar {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background: #00b4ff;
+            border: none;
+            color: #fff;
+            font-size: 17px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .enviar:hover {
+            transform: scale(1.05);
+            background: #008ac4;
+        }
+
+
+
+        .enviar:active {
+            transform: scale(1.05);
+            background: rgba(55, 55, 55, 0.95);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Jogo do Ano</h1>
+
+        <form action="menu_votos.html" method="GET">
+            <div class="opcoes">
+
+                <label>
+                    <input type="radio" name="voto" value="Charlie Cox" required>
+                    Charlie Cox
+                    <br>
+                    Clair Obscur: Expedition 33
+                </label>
+
+                <label>
+                    <input type="radio" name="voto" value="Jennifer English">
+                    Jennifer English
+                    <br>
+                    Clair Obscur: Expedition 33
+
+                </label>
+
+                <label>
+                    <input type="radio" name="voto" value="Ben Starr">
+                    Ben Starr
+                    <br>
+                    Clair Obscur: Expedition 33
+
+                </label>
+
+                <label>
+                    <input type="radio" name="voto" value="Erika Ishii">
+                    Erika Ishii
+                    <br>
+                    Ghost of Yõtei
+
+                </label>
+
+                <label>
+                    <input type="radio" name="voto" value="Konatsu Kato">
+                    Konatsu Kato
+                    <br>
+                    Silent Hill f
+
+                </label>
+
+                <label>
+                    <input type="radio" name="voto" value="Troy Baker">
+                    Troy Baker
+                    <br>
+                    Indiana Jones and the Great Circle
+                </label>
+
+            </div>
+
+            <button class="enviar" type="submit">Enviar Voto</button>
+        </form>
+
+        <footer>
+            &copy; 2025 The Game Awards. Lucas Araujo Santos e Lucas Guimarães Biral. Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
